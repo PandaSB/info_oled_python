@@ -1,0 +1,13 @@
+[Unit]
+Description=sys_info
+After=network.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=<Working directory>
+ExecStart=<Working directory>sys_info.py --display=sh1106
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
